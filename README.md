@@ -16,6 +16,8 @@ Source code structure:
 
 ## Generate certificates
 
+![image](resources/TLS.png)
+
 ### 1. Self Signed Root CA
 
 To be able to sign our server-side and client-side certificates, we need to create our own self-signed root CA certificate first. 
@@ -154,6 +156,8 @@ We need to install our generated root certificate authority as a trusted certifi
 - Access `https://localhost:8443/server.api/v1/user` -> You can see the response.
 
 ## mTLS
+
+![image](resources/mTLS.png)
 
 ### Create Truststore
 
