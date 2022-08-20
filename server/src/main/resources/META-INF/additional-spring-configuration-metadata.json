@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "toggle.ssl.enabled",
+      "type": "java.lang.String",
+      "description": "Description for toggle.ssl.enabled."
+    }
+  ] }
