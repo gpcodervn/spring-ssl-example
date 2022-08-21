@@ -161,18 +161,18 @@ We need to install our generated root certificate authority as a trusted certifi
 
 ### Create Truststore
 
-A trustsore in some way is the opposite of a keystore. It holds the certificates of the external entities that we trust.
+A truststore in some way is the opposite of a keystore. It holds the certificates of the external entities that we trust.
 In this example, I want to keep the root CA certificate in the truststore.
 
 > keytool -import -trustcacerts -noprompt -alias ca -ext san=dns:localhost,ip:127.0.0.1 -file rootCA.crt -keystore truststore.jks
 
 + pwd: trust123
 
-Output: `keystore.jks`
+Output: `truststore.jks`
 
 View the content of JKS file:
 
-> keytool -v -list -keystore keystore.jks
+> keytool -v -list -keystore truststore.jks
 
 ### Create client keystore
 
